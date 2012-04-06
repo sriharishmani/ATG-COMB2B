@@ -1,0 +1,60 @@
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD Dynamo Security//EN" 
+"http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>Events Repository</name>
+    <author>Diana Carroll</author>
+    <description> [TBD]
+    </description>
+  </header>
+  
+  <item-descriptor name="venue" display-property="name">
+    <table name="dynamusic_venue" 
+           type="primary" 
+           id-column-name="id"> 
+      <property name="id" column-name="id" data-type="string"/>
+      <property name="name" column-name="name" data-type="string"/>  
+      <property name="description" column-name="description" data-type="string"/>  
+      <property name="imageURL" column-name="image" data-type="string"/>  
+      <property name="street1" column-name="street1" data-type="string"/>  
+      <property name="street2" column-name="street2" data-type="string"/>  
+      <property name="city" column-name="city" data-type="string"/>  
+      <property name="state" column-name="state" data-type="string"/>  
+      <property name="zip" column-name="zip" data-type="string"/>  
+      <property name="phone" column-name="phone" data-type="string"/> 
+      <property name="url" column-name="url" data-type="string"/> 
+       
+    </table> 
+
+    <table name="dynamusic_venue_eventtypes" type="multi"
+           id-column-name="venue_id">
+        <property name="type"                           
+           data-type="set"
+           component-data-type="string"
+           column-name="event_type"/>
+    </table>
+    
+  </item-descriptor>
+
+  <item-descriptor name="concert" display-property="name">
+    <table name="dynamusic_concert" 
+           type="primary" 
+           id-column-name="id"> 
+      <property name="id" column-name="id" data-type="string"/>
+      <property name="name" column-name="name" data-type="string"/>
+      <property name="description" column-name="description" data-type="string"/>  
+      <property name="venue" column-name="venue" item-type="venue"/>  
+      <property name="imageURL" column-name="image" data-type="string"/>  
+      <property name="date" column-name="event_date" data-type="timestamp"/>
+    </table>
+    <table name="dynamusic_concert_artists" type="multi" id-column-name="concert_id">
+    	<property name="artists" data-type="set"
+              component-item-type="artist"
+              column-name="artist_id"
+              repository="/dynamusic/SongsRepository"/>
+    </table> 
+  </item-descriptor>
+
+</gsa-template>

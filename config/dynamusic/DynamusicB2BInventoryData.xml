@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template SYSTEM "dynamosystemresource:/atg/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+<import-items>
+<!-- 24 items of type inventory -->
+
+<add-item item-descriptor="inventory" id="inv10005">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:05:52]]></set-property>
+  <set-property name="backorderLevel"><![CDATA[10]]></set-property>
+  <set-property name="stockLevel"><![CDATA[100]]></set-property>
+  <set-property name="displayName"><![CDATA[Beatles Anthology 1]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[2]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku240018]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv30006">
+  <set-property name="creationDate"><![CDATA[4/16/2006 16:14:38]]></set-property>
+  <set-property name="stockLevel"><![CDATA[2000]]></set-property>
+  <set-property name="displayName"><![CDATA[Life in a Northern Town]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku340004]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10015">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:09:48]]></set-property>
+  <set-property name="stockLevel"><![CDATA[10]]></set-property>
+  <set-property name="displayName"><![CDATA[Kelly Clarkson Because of You (Import)]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku240006]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv30002">
+  <set-property name="creationDate"><![CDATA[4/16/2006 16:13:52]]></set-property>
+  <set-property name="stockLevel"><![CDATA[-1]]></set-property>
+  <set-property name="displayName"><![CDATA[Magic (Album)]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku340008]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10019">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:11:15]]></set-property>
+  <set-property name="stockLevel"><![CDATA[-1]]></set-property>
+  <set-property name="displayName"><![CDATA[Kelly Clarkson Breakaway]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku180004]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10021">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:12:06]]></set-property>
+  <set-property name="stockLevel"><![CDATA[1000]]></set-property>
+  <set-property name="displayName"><![CDATA[CD Safer Double]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="stockThreshold"><![CDATA[50]]></set-property>
+  <set-property name="catalogRefId"><![CDATA[sku120012]]></set-property>
+  <set-property name="backorderThreshold"><![CDATA[100]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10031">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:15:08]]></set-property>
+  <set-property name="backorderLevel"><![CDATA[10]]></set-property>
+  <set-property name="stockLevel"><![CDATA[100]]></set-property>
+  <set-property name="displayName"><![CDATA[Wire CD Display 64 Pocket Black]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="stockThreshold"><![CDATA[10]]></set-property>
+  <set-property name="catalogRefId"><![CDATA[sku120006]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10027">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:13:47]]></set-property>
+  <set-property name="stockLevel"><![CDATA[500]]></set-property>
+  <set-property name="displayName"><![CDATA[Pop Muzik]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku240014]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10009">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:06:41]]></set-property>
+  <set-property name="stockLevel"><![CDATA[10]]></set-property>
+  <set-property name="displayName"><![CDATA[Beatles 1962 Poster]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku180008]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10023">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:12:55]]></set-property>
+  <set-property name="backorderLevel"><![CDATA[100]]></set-property>
+  <set-property name="stockLevel"><![CDATA[1000]]></set-property>
+  <set-property name="displayName"><![CDATA[CD Safer Single]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="stockThreshold"><![CDATA[100]]></set-property>
+  <set-property name="catalogRefId"><![CDATA[sku120010]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv30004">
+  <set-property name="creationDate"><![CDATA[4/16/2006 16:14:15]]></set-property>
+  <set-property name="stockLevel"><![CDATA[-1]]></set-property>
+  <set-property name="displayName"><![CDATA[Magic (Single)]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku340010]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10013">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:09:12]]></set-property>
+  <set-property name="stockLevel"><![CDATA[-1]]></set-property>
+  <set-property name="displayName"><![CDATA[Kelly Clarkson Because of You]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku240004]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10007">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:06:14]]></set-property>
+  <set-property name="backorderLevel"><![CDATA[10]]></set-property>
+  <set-property name="stockLevel"><![CDATA[100]]></set-property>
+  <set-property name="displayName"><![CDATA[Beatles Anthology 2]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku240020]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv30008">
+  <set-property name="creationDate"><![CDATA[4/16/2006 16:15:07]]></set-property>
+  <set-property name="stockLevel"><![CDATA[1500]]></set-property>
+  <set-property name="displayName"><![CDATA[Life in a Northern Town (Extended)]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku340006]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10003">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:05:16]]></set-property>
+  <set-property name="stockLevel"><![CDATA[-1]]></set-property>
+  <set-property name="displayName"><![CDATA[Acrylic 10 CD rack]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[2]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku120004]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10017">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:10:40]]></set-property>
+  <set-property name="stockLevel"><![CDATA[50]]></set-property>
+  <set-property name="displayName"><![CDATA[BB King Blues on the Bayou]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku180010]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10025">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:13:24]]></set-property>
+  <set-property name="stockLevel"><![CDATA[500]]></set-property>
+  <set-property name="displayName"><![CDATA[Mickey]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku240022]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10033">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:15:39]]></set-property>
+  <set-property name="backorderLevel"><![CDATA[10]]></set-property>
+  <set-property name="stockLevel"><![CDATA[100]]></set-property>
+  <set-property name="displayName"><![CDATA[Wire CD Display 64 Pocket White]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku120008]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10011">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:07:03]]></set-property>
+  <set-property name="stockLevel"><![CDATA[10]]></set-property>
+  <set-property name="displayName"><![CDATA[Beatles 1964 Sweden Poster]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[2]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku180006]]></set-property>
+</add-item>
+
+<add-item item-descriptor="inventory" id="inv10029">
+  <set-property name="creationDate"><![CDATA[4/14/2006 10:14:09]]></set-property>
+  <set-property name="stockLevel"><![CDATA[500]]></set-property>
+  <set-property name="displayName"><![CDATA[Whip It]]></set-property>
+  <!-- export is false   <set-property name="version"><![CDATA[1]]></set-property>  -->
+  <set-property name="catalogRefId"><![CDATA[sku60004]]></set-property>
+</add-item>
+
+</import-items>
+
+</gsa-template>

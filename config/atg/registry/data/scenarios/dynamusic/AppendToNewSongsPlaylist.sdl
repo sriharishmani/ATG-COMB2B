@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE scenario
+  SYSTEM
+  "dynamosystemresource:/atg/scenario/definition/sdl.dtd">
+
+<scenario author="admin" creation-time="1058369248585" enabled="true" last-modified-by="admin" modification-time="1058462224920">
+  <segment migrate-users="true">
+    <segment-name>Segment 1</segment-name>
+    <!--================================-->
+    <!--== New Song Added  -->
+    <!--================================-->
+    <event id="1" recurring="true">
+      <event-name>NewSongMessage</event-name>
+    </event>
+    <!--================================-->
+    <!--== newSongsAutoUpdate is true  -->
+    <!--================================-->
+    <condition construct="people-element" id="2">
+      <filter construct="profile-property-filter" operator="eq">
+        <subject-property>
+          <property-name>newSongsAutoUpdate</property-name>
+        </subject-property>
+        <constant type="java.lang.Boolean">true</constant>
+      </filter>
+    </condition>
+    <!--================================-->
+    <!--== prefGenres includes Event's songGenre  -->
+    <!--================================-->
+    <condition construct="people-element" id="3">
+      <filter construct="profile-property-filter" operator="includes">
+        <subject-property>
+          <property-name>prefGenres</property-name>
+        </subject-property>
+        <event-property construct="event-property">
+          <property-name>songGenre</property-name>
+        </event-property>
+      </filter>
+    </condition>
+    <!--================================-->
+    <!--== New Item Add-To-Profile New Songs Playlist Limit (String): 10  -->
+    <!--================================-->
+    <action id="4">
+      <action-name>New Item Add-To-Profile</action-name>
+      <action-param name="newSongsPlaylistLimit">
+        <constant type="java.lang.Integer">10</constant>
+      </action-param>
+    </action>
+  </segment>
+</scenario>

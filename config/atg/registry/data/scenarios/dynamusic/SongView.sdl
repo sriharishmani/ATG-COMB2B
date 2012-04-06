@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+
+<!DOCTYPE scenario
+  SYSTEM
+  "dynamosystemresource:/atg/scenario/definition/sdl.dtd">
+
+<scenario author="admin" creation-time="1056390540314" enabled="true" last-modified-by="admin" modification-time="1056390655402">
+  <segment migrate-users="true">
+    <segment-name>SongSensor</segment-name>
+    <!--================================-->
+    <!--== Logs in  -->
+    <!--================================-->
+    <event id="1">
+      <event-name>atg.dps.Login</event-name>
+    </event>
+    <fork id="2">
+      <branch id="2.1">
+        <!--================================-->
+        <!--== Views an item from SongsRepository of type song  -->
+        <!--================================-->
+        <event id="2.1.1">
+          <event-name>atg.dps.ViewItem</event-name>
+          <filter construct="content-repository-filter" operator="eq">
+            <event-property>
+              <property-name>repositoryName</property-name>
+            </event-property>
+            <constant>SongsRepository</constant>
+          </filter>
+          <filter construct="content-item-descriptor" operator="eq">
+            <event-property>
+              <property-name>itemType</property-name>
+            </event-property>
+            <constant>song</constant>
+          </filter>
+        </event>
+        <!--================================-->
+        <!--== Change Person's viewedSongs by appending once Event's item  -->
+        <!--================================-->
+        <action id="2.1.2">
+          <action-name construct="modify-action">modify</action-name>
+          <action-param name="modified">
+            <subject-property>
+              <property-name>viewedSongs</property-name>
+            </subject-property>
+          </action-param>
+          <action-param name="operator">
+            <constant>appendOnce</constant>
+          </action-param>
+          <action-param name="modifier">
+            <event-property construct="event-property">
+              <property-name>item</property-name>
+            </event-property>
+          </action-param>
+        </action>
+      </branch>
+      <branch id="2.2">
+        <!--================================-->
+        <!--== Session ends  -->
+        <!--================================-->
+        <event id="2.2.1">
+          <event-name>atg.dps.EndSession</event-name>
+        </event>
+      </branch>
+    </fork>
+  </segment>
+</scenario>

@@ -1,0 +1,28 @@
+<%@ taglib uri="/dspTaglib" prefix="dsp" %>
+<dsp:page>
+
+<dsp:importbean bean="/atg/dynamo/droplet/ForEach"/>
+<dsp:importbean bean="/atg/dynamo/droplet/Switch"/>
+                     
+                     <dsp:droplet name="ForEach">
+                       <dsp:param name="array" param="shippingGroups"/>
+                       <dsp:oparam name="output">
+                         <dsp:droplet name="Switch">
+                           <dsp:param name="value" param="key"/>
+                           <dsp:getvalueof id="nameval1" param="cisiItem.shippingGroupName" idtype="java.lang.String">
+                            <dsp:oparam name="<%=nameval1%>">
+                              <dsp:getvalueof id="option16" param="key" idtype="java.lang.String">
+                                <dsp:option selected="<%=true%>" value="<%=option16%>"/>
+                              </dsp:getvalueof><dsp:valueof param="key"/>
+                            </dsp:oparam>
+                          </dsp:getvalueof>
+                            <dsp:oparam name="default">
+                              <dsp:getvalueof id="option24" param="key" idtype="java.lang.String">
+                                <dsp:option selected="<%=false%>" value="<%=option24%>"/>
+                              </dsp:getvalueof>
+                             <dsp:valueof param="key"/>
+                           </dsp:oparam>
+                         </dsp:droplet>
+                       </dsp:oparam>
+                     </dsp:droplet>
+</dsp:page>

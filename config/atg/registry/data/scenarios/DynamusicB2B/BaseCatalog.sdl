@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE process SYSTEM "dynamosystemresource:/atg/dtds/pdl/pdl_1.0.dtd">
+<process author="admin" creation-time="1144126188269" enabled="true" last-modified-by="admin" modification-time="1144165915346">
+  <segment migrate-subjects="true">
+    <segment-name>AnonymousCatalog</segment-name>
+    <!--================================-->
+    <!--== Session starts  -->
+    <!--================================-->
+    <event id="1">
+      <event-name>atg.dps.StartSession</event-name>
+    </event>
+    <!--================================-->
+    <!--== Catalog is undefined  -->
+    <!--================================-->
+    <condition construct="people-element" id="2">
+      <filter construct="profile-property-filter" operator="isNull">
+        <subject-property>
+          <property-name>catalog</property-name>
+        </subject-property>
+      </filter>
+    </condition>
+    <!--================================-->
+    <!--== Change Person's Catalog to Base Catalog  -->
+    <!--================================-->
+    <action id="3">
+      <action-name construct="modify-action">modify</action-name>
+      <action-param name="modified">
+        <subject-property>
+          <property-name>catalog</property-name>
+        </subject-property>
+      </action-param>
+      <action-param name="operator">
+        <constant>assign</constant>
+      </action-param>
+      <action-param name="modifier">
+        <constant construct="repository-item-expr" type="atg.repository.RepositoryItem">/atg/commerce/catalog/ProductCatalog:catalog:catalog50005</constant>
+      </action-param>
+    </action>
+  </segment>
+  <segment migrate-subjects="true">
+    <segment-name>NewRetailUser</segment-name>
+    <!--================================-->
+    <!--== Registers  -->
+    <!--================================-->
+    <event id="1">
+      <event-name>atg.dps.Register</event-name>
+    </event>
+    <!--================================-->
+    <!--== Catalog is undefined  -->
+    <!--================================-->
+    <condition construct="people-element" id="2">
+      <filter construct="profile-property-filter" operator="isNull">
+        <subject-property>
+          <property-name>catalog</property-name>
+        </subject-property>
+      </filter>
+    </condition>
+    <!--================================-->
+    <!--== Change Person's Catalog to Base Catalog  -->
+    <!--================================-->
+    <action id="3">
+      <action-name construct="modify-action">modify</action-name>
+      <action-param name="modified">
+        <subject-property>
+          <property-name>catalog</property-name>
+        </subject-property>
+      </action-param>
+      <action-param name="operator">
+        <constant>assign</constant>
+      </action-param>
+      <action-param name="modifier">
+        <constant construct="repository-item-expr" type="atg.repository.RepositoryItem">/atg/commerce/catalog/ProductCatalog:catalog:catalog50005</constant>
+      </action-param>
+    </action>
+  </segment>
+</process>

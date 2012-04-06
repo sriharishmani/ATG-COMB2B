@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE scenario-manager-configuration
+        PUBLIC "-//Art Technology Group, Inc.//DTD Scenario Manager//EN"
+        'http://www.atg.com/dtds/processmanager/processmanager_1.0.dtd'>
+
+          <process-manager-configuration>
+          
+           <event-registry>
+              <event>
+                 <jms-type>NewSongMessage</jms-type>
+	         <message-class>dynamusic.NewSongMessage</message-class>
+	         <message-scope>global</message-scope>
+	         <display-name>New Song Added</display-name>
+	         <description>This event is fired by the SongsManager when
+	         a new song is added to the SongsRepository.  It includes
+	         songId, songGenre, and title as properties
+	         </description>            
+              </event>
+           </event-registry>
+          
+           <action-registry>
+             <action>
+                <action-name>New Item Add-To-Profile</action-name>
+                <display-name>New Item Add-To-Profile</display-name>
+                <action-class>dynamusic.NewItemAddToProfile</action-class>
+              	<action-configuration>/dynamusic/NewItemAddToProfileActionConfig</action-configuration>
+                <action-execution-policy>individual</action-execution-policy>
+                <action-error-response>continue</action-error-response>
+                <action-parameter>
+                  <action-parameter-name>
+                    newSongsPlaylistLimit
+                  </action-parameter-name>
+                  <display-name>
+                    New Songs Playlist Limit (String)
+                  </display-name>
+                  <action-parameter-class>
+                    java.lang.Integer
+                  </action-parameter-class>
+                  <required>
+                    false
+                  </required>
+                </action-parameter>                
+             </action>                     
+          </action-registry>
+          
+          </process-manager-configuration>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template SYSTEM "dynamosystemresource:/atg/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+<import-items>
+<!-- 2 items of type concert -->
+
+<add-item item-descriptor="concert" id="70701">
+  <set-property name="artists"><![CDATA[500009]]></set-property>
+  <set-property name="date"><![CDATA[12/13/2004 20:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60601]]></set-property>
+  <set-property name="name"><![CDATA[The Cure: Just Like Heaven Tour]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/TheCure.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70702">
+  <set-property name="artists"><![CDATA[500015]]></set-property>
+  <set-property name="date"><![CDATA[11/21/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60601]]></set-property>
+  <set-property name="name"><![CDATA[Bob Dylan's Rolling Thunder 2004!]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/BobDylan.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70703">
+  <set-property name="artists"><![CDATA[500009]]></set-property>
+  <set-property name="date"><![CDATA[10/07/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60602]]></set-property>
+  <set-property name="name"><![CDATA[The Cure: Just Like Heaven Tour]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/TheCure.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70704">
+  <set-property name="artists"><![CDATA[500013]]></set-property>
+  <set-property name="date"><![CDATA[11/01/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60602]]></set-property>
+  <set-property name="name"><![CDATA[Bjork: All Is Full of Love Tour]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/Bjork.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70705">
+  <set-property name="artists"><![CDATA[500013]]></set-property>
+  <set-property name="date"><![CDATA[10/15/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60610]]></set-property>
+  <set-property name="name"><![CDATA[Bjork: All Is Full of Love Tour]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/Bjork.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70706">
+  <set-property name="artists"><![CDATA[500014]]></set-property>
+  <set-property name="date"><![CDATA[12/08/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60610]]></set-property>
+  <set-property name="name"><![CDATA[Tim McGraw Live]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/TimMcGraw.gif]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70707">
+  <set-property name="artists"><![CDATA[500011]]></set-property>
+  <set-property name="date"><![CDATA[10/10/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60603]]></set-property>
+  <set-property name="name"><![CDATA[Shania: Up! Up! Up! Tour]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/ShaniaTwain.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70708">
+  <set-property name="artists"><![CDATA[500009]]></set-property>
+  <set-property name="date"><![CDATA[11/21/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60603]]></set-property>
+  <set-property name="name"><![CDATA[The Cure: Just Like Heaven Tour]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/TheCure.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70709">
+  <set-property name="artists"><![CDATA[500011,500014]]></set-property>
+  <set-property name="date"><![CDATA[11/25/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60604]]></set-property>
+  <set-property name="name"><![CDATA[Shania and Tim, Live 2004]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/ShaniaAndTim.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70710">
+  <set-property name="artists"><![CDATA[500007]]></set-property>
+  <set-property name="date"><![CDATA[12/15/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60604]]></set-property>
+  <set-property name="name"><![CDATA[Johnny Cash: The Man In Black Tour]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/JohnnyCash.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70711">
+  <set-property name="artists"><![CDATA[500002]]></set-property>
+  <set-property name="date"><![CDATA[11/01/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60608]]></set-property>
+  <set-property name="name"><![CDATA[BB King Live]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/BBKing.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70712">
+  <set-property name="artists"><![CDATA[500016]]></set-property>
+  <set-property name="date"><![CDATA[10/20/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60608]]></set-property>
+  <set-property name="name"><![CDATA[Toni Braxton Live]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/ToniBraxton.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70713">
+  <set-property name="artists"><![CDATA[500015]]></set-property>
+  <set-property name="date"><![CDATA[12/02/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60607]]></set-property>
+  <set-property name="name"><![CDATA[Bob Dylan's Rolling Thunder 2004!]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/BobDylan.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70714">
+  <set-property name="artists"><![CDATA[500014]]></set-property>
+  <set-property name="date"><![CDATA[11/30/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60607]]></set-property>
+  <set-property name="name"><![CDATA[Tim McGraw Live]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/TimMcGraw.gif]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70715">
+  <set-property name="artists"><![CDATA[500002]]></set-property>
+  <set-property name="date"><![CDATA[10/12/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60609]]></set-property>
+  <set-property name="name"><![CDATA[BB King Live]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/BBKing.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70716">
+  <set-property name="artists"><![CDATA[500016]]></set-property>
+  <set-property name="date"><![CDATA[11/14/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60609]]></set-property>
+  <set-property name="name"><![CDATA[Toni Braxton Live]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/ToniBraxton.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70717">
+  <set-property name="artists"><![CDATA[500007]]></set-property>
+  <set-property name="date"><![CDATA[12/16/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60606]]></set-property>
+  <set-property name="name"><![CDATA[Johnny Cash: The Man In Black Tour]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/JohnnyCash.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70718">
+  <set-property name="artists"><![CDATA[500014]]></set-property>
+  <set-property name="date"><![CDATA[10/18/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60606]]></set-property>
+  <set-property name="name"><![CDATA[Tim McGraw Live]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/TimMcGraw.gif]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70719">
+  <set-property name="artists"><![CDATA[500013,500006,500015,500016,500002]]></set-property>
+  <set-property name="date"><![CDATA[11/20/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60605]]></set-property>
+  <set-property name="name"><![CDATA[Tribute to New York Concert]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/TributeToNewYork.jpg]]></set-property>
+</add-item>
+
+<add-item item-descriptor="concert" id="70720">
+  <set-property name="artists"><![CDATA[500002]]></set-property>
+  <set-property name="date"><![CDATA[12/24/2004 15:30:00]]></set-property>
+  <set-property name="venue"><![CDATA[60605]]></set-property>
+  <set-property name="name"><![CDATA[BB King Live]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/BBKing.jpg]]></set-property>
+</add-item>
+
+<!-- 5 items of type venue -->
+
+<add-item item-descriptor="venue" id="60601">
+  <set-property name="phone"><![CDATA[617-624-1750 ]]></set-property>
+  <set-property name="city"><![CDATA[Boston]]></set-property>
+  <set-property name="url"><![CDATA[http://www.fleetcenter.com]]></set-property>
+  <set-property name="state"><![CDATA[MA]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/FleetCenter.jpg]]></set-property>
+  <set-property name="description"><![CDATA[Although it is best recognized as home to two of the most storied franchises in all of sports (the NHL's Boston Bruins and the NBA's Boston Celtics), the Fleet Center also hosts ice shows, the circus...]]></set-property>
+  <set-property name="street1"><![CDATA[One Fleetcenter]]></set-property>
+  <set-property name="name"><![CDATA[Fleet Center]]></set-property>
+  <set-property name="zip"><![CDATA[02114 ]]></set-property>
+</add-item>
+
+<add-item item-descriptor="venue" id="60602">
+  <set-property name="phone"><![CDATA[505-986-5900]]></set-property>
+  <set-property name="city"><![CDATA[Santa  Fe]]></set-property>
+  <set-property name="url"><![CDATA[http://www.santafeopera.org]]></set-property>
+  <set-property name="state"><![CDATA[NM]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/SantaFeOperaHouse.jpg]]></set-property>
+  <set-property name="description"><![CDATA[When The Santa Fe Opera opened its doors in 1957, founder John Crosby and the dedicated group of community leaders who had come to share his vision were confident...]]></set-property>
+  <set-property name="street2"><![CDATA[Highway 84/285 ]]></set-property>
+  <set-property name="street1"><![CDATA[PO Box 2408]]></set-property>
+  <set-property name="name"><![CDATA[Santa Fe Opera House]]></set-property>
+  <set-property name="zip"><![CDATA[87504]]></set-property>
+</add-item>
+
+<add-item item-descriptor="venue" id="60603">
+  <set-property name="phone"><![CDATA[212.465.MSG1 ]]></set-property>
+  <set-property name="city"><![CDATA[New York]]></set-property>
+  <set-property name="url"><![CDATA[http://www.thegarden.com]]></set-property>
+  <set-property name="state"><![CDATA[NY]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/MadisonSquareGarden.jpg]]></set-property>
+  <set-property name="description"><![CDATA["The Garden" is New York City's premiere location for events of all types, including...]]></set-property>
+  <set-property name="street1"><![CDATA[7th Ave]]></set-property>
+  <set-property name="name"><![CDATA[Madison Square Garden]]></set-property>
+  <set-property name="zip"><![CDATA[50001]]></set-property>
+</add-item>
+
+<add-item item-descriptor="venue" id="60604">
+  <set-property name="phone"><![CDATA[1-866-690-2370]]></set-property>
+  <set-property name="city"><![CDATA[Mansfield]]></set-property>
+  <set-property name="url"><![CDATA[http://tweetercenter.com/boston/]]></set-property>
+  <set-property name="state"><![CDATA[MA]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/GreatWoods.jpg]]></set-property>
+  <set-property name="description"><![CDATA[Welcome to Tweeter Center located in Mansfield, Massachusetts. From the hottest new talents to world-renowned stars the variety of artists visiting our stage will excite fans of each and every kind of music...]]></set-property>
+  <set-property name="street2"><![CDATA[PO Box 810]]></set-property>
+  <set-property name="street1"><![CDATA[885 South Main Street]]></set-property>
+  <set-property name="name"><![CDATA[Great Woods Tweeter Center]]></set-property>
+  <set-property name="zip"><![CDATA[02048-3148]]></set-property>
+</add-item>
+
+<add-item item-descriptor="venue" id="60605">
+  <set-property name="phone"><![CDATA[212.875.5456]]></set-property>
+  <set-property name="city"><![CDATA[New York]]></set-property>
+  <set-property name="url"><![CDATA[http://www.lincolncenter.com]]></set-property>
+  <set-property name="state"><![CDATA[NY]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/LincolnCenter.jpg]]></set-property>
+  <set-property name="description"><![CDATA[The Lincoln Center's 12 resident companies represent the very best in performing arts today.  Including such renowned names as the Metropolitan Opera, the New York City Ballet...]]></set-property>
+  <set-property name="street1"><![CDATA[140 West 65th Street]]></set-property>
+  <set-property name="name"><![CDATA[Lincoln Center]]></set-property>
+  <set-property name="zip"><![CDATA[10023]]></set-property>
+</add-item>
+
+<add-item item-descriptor="venue" id="60606">
+  <set-property name="phone"><![CDATA[615.458.8700]]></set-property>
+  <set-property name="city"><![CDATA[Nashville]]></set-property>
+  <set-property name="url"><![CDATA[http://www.ryman.com]]></set-property>
+  <set-property name="state"><![CDATA[TN]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/RymanAuditorium.jpg]]></set-property>
+  <set-property name="description"><![CDATA[The Ryman Auditorium first opened its doors in 1892 as a vision of Captain Thomas G. Ryman. With the coming of the Grand Ole Opry show in 1943, the Ryman found its identity as the Mother Church of Country Music...]]></set-property>
+  <set-property name="street1"><![CDATA[116 Fifth Avenue North]]></set-property>
+  <set-property name="name"><![CDATA[Ryman Auditorium]]></set-property>
+  <set-property name="zip"><![CDATA[37219]]></set-property>
+</add-item>
+
+<add-item item-descriptor="venue" id="60607">
+  <set-property name="phone"><![CDATA[323.850.2000]]></set-property>
+  <set-property name="city"><![CDATA[Hollywood]]></set-property>
+  <set-property name="url"><![CDATA[http://www.hollywoodbowl.org]]></set-property>
+  <set-property name="state"><![CDATA[CA]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/HollywoodBowl.jpg]]></set-property>
+  <set-property name="description"><![CDATA[One of the largest natural amphitheaters in the world, with a current seating capacity of just under 18,000, the Hollywood Bowl has been the summer home of the Los Angeles Philharmonic since its official...]]></set-property>
+  <set-property name="street1"><![CDATA[2301 North Highland Avenue]]></set-property>
+  <set-property name="name"><![CDATA[Hollywood Bowl]]></set-property>
+  <set-property name="zip"><![CDATA[90078]]></set-property>
+</add-item>
+
+<add-item item-descriptor="venue" id="60608">
+  <set-property name="phone"><![CDATA[212.903.9600]]></set-property>
+  <set-property name="city"><![CDATA[New York]]></set-property>
+  <set-property name="url"><![CDATA[http://www.carnegiehall.org]]></set-property>
+  <set-property name="state"><![CDATA[NY]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/CarnegieHall.jpg]]></set-property>
+  <set-property name="description"><![CDATA[The largest hall at Carnegie Hall, dedicated the Isaac Stern Auditorium in 1996, has been the premier classical music performance space in the United States since its opening in 1891, showcasing the world's...]]></set-property>
+  <set-property name="street1"><![CDATA[154 West 57th Street]]></set-property>
+  <set-property name="name"><![CDATA[Carnegie Hall]]></set-property>
+  <set-property name="zip"><![CDATA[10019]]></set-property>
+</add-item>
+
+<add-item item-descriptor="venue" id="60609">
+  <set-property name="phone"><![CDATA[404.872.2972]]></set-property>
+  <set-property name="city"><![CDATA[Atlanta]]></set-property>
+  <set-property name="url"><![CDATA[http://www.foxtheatre.org]]></set-property>
+  <set-property name="state"><![CDATA[GA]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/FoxTheatre.jpg]]></set-property>
+  <set-property name="description"><![CDATA[Atlanta's Fox Theatre, originally the Yaarab Temple Shrine Mosque, was designed in the late 1920's as headquarters for the 5,000-member Shriner's organization. It was a beautifully outlandish, opulent, grandiose...]]></set-property>
+  <set-property name="street1"><![CDATA[660 Peachtree Street]]></set-property>
+  <set-property name="name"><![CDATA[Fox Theatre]]></set-property>
+  <set-property name="zip"><![CDATA[30308]]></set-property>
+</add-item>
+
+<add-item item-descriptor="venue" id="60610">
+  <set-property name="phone"><![CDATA[303.640.2637]]></set-property>
+  <set-property name="city"><![CDATA[Denver]]></set-property>
+  <set-property name="url"><![CDATA[http://www.redrocksonline.com]]></set-property>
+  <set-property name="state"><![CDATA[CO]]></set-property>
+  <set-property name="imageURL"><![CDATA[images/RedRocksAmphitheatre.jpg]]></set-property>
+  <set-property name="description"><![CDATA[Nestled in the Rocky Mountain Foothills fifteen miles west of Denver, there stands a symbol of nature's unparalleled majesty. Red Rocks is a geologically formed, open-air Amphitheatre that is not duplicated...]]></set-property>
+  <set-property name="street1"><![CDATA[1380 Lawrence Street Ste. 790]]></set-property>
+  <set-property name="name"><![CDATA[Red Rocks Amphitheatre]]></set-property>
+  <set-property name="zip"><![CDATA[80204]]></set-property>
+</add-item>
+
+
+</import-items>
+
+</gsa-template>

@@ -1,0 +1,249 @@
+<!-- This file provides a starting point for extending the 
+     profile repository.
+
+     The comments below coincide with the instructions in the
+     lab.
+ -->
+     
+<gsa-template>
+ <item-descriptor name="playlist" display-property="name">
+    <table name="dynamusic_playlist" type="primary"
+         id-column-name="id">
+        <property name="id" data-type="string" column-name="id"/>
+    	<property name="name" data-type="string"
+              column-name="name" />
+        <property name="publish" data-type="boolean" 
+              column-name="publish" />
+    	<property name="description" data-type="string"
+              column-name="description" />
+     </table>
+     <table name="dynamusic_playlist_song" id-column-name="pl_id" type="multi">
+        <property name="songs"                           
+           data-type="set"
+           component-item-type="song"
+           column-name="song_id" 
+           repository="/dynamusic/SongsRepository"/>
+     </table>
+ </item-descriptor>
+
+ <item-descriptor name="user" >
+    <property name="currentOrganization" item-type="organization" hidden="true"/>
+    <property name="currentUser" item-type="user" hidden="true"/>
+
+    <table name="dynamusic_user" type="auxiliary"
+         id-column-name="user_id">
+    	<property name="info" data-type="string"
+              column-name="info" category="dynamusic" />
+        <property name="shareProfile" data-type="boolean" 
+              column-name="share_profile" category="dynamusic" />
+        <property name="subscriber" data-type="boolean" 
+              column-name="subscriber" category="dynamusic" default="false"/>
+        <property name="initialDownloadNumber" data-type="int"
+              column-name="initial_download_number" category="dynamusic" />
+        <property name="myDownloadNumber" data-type="int"
+              column-name="my_download_number" category="dynamusic" />
+        <property name="numberOfOrders" data-type="int"
+              column-name="num_orders" default="0" category="DynamusicB2B" />
+	<property name="CumulativeOrderAmount" data-type="double"
+              column-name="cum_order_amt" default="0.0" category="DynamusicB2B" />
+        <property name="avgOrderAmt" data-type="double" category="DynamusicB2B" 
+              column-name="avg_order_amt" default="0.0" display-name="avgOrderAmt" />
+    </table>
+
+        <property name="invoiceRequestAuthorized" data-type="boolean" category="DynamusicB2B" 
+              display-name="invoiceRequestAuthorized">
+          <derivation override-property="myInvoiceRequestAuthorized">
+            <expression>parentOrganization.invoiceRequestAuthorized</expression>
+          </derivation>
+          <attribute name="propertySortPriority" value="-55"/>
+        </property>
+
+        <property name="creditCardAuthorized" data-type="boolean" category="DynamusicB2B" 
+              display-name="creditCardAuthorized">
+          <derivation override-property="myCreditCardAuthorized">
+            <expression>parentOrganization.creditCardAuthorized</expression>
+          </derivation>
+          <attribute name="propertySortPriority" value="-50"/>
+        </property>
+
+        <property name="giftCertificateAuthorized" data-type="boolean" category="DynamusicB2B" 
+              display-name="giftCertificateAuthorized">
+          <derivation override-property="myGiftCertificateAuthorized">
+            <expression>parentOrganization.giftCertificateAuthorized</expression>
+          </derivation>
+          <attribute name="propertySortPriority" value="-45"/>
+        </property>
+
+        <property name="storeCreditAuthorized" category="DynamusicB2B" data-type="boolean" 
+              display-name="storeCreditAuthorized">
+          <derivation override-property="myStoreCreditAuthorized">
+            <expression>parentOrganization.storeCreditAuthorized</expression>
+          </derivation>
+          <attribute name="propertySortPriority" value="-40"/>
+        </property>
+
+    <table name="dynamusic_auth_pmnt" type="auxiliary" id-column-name="id">
+        <property name="myInvoiceRequestAuthorized" data-type="boolean" category="DynamusicB2B" 
+              column-name="invoice_auth" expert="true" display-name="myInvoiceRequestAuthorized">
+              <attribute name="propertySortPriority" value="-35"/>
+        </property>
+        <property name="myCreditCardAuthorized" data-type="boolean" category="DynamusicB2B" 
+              column-name="cc_auth" expert="true" display-name="myCreditCardAuthorized">
+              <attribute name="propertySortPriority" value="-30"/>
+        </property>
+        <property name="myGiftCertificateAuthorized" data-type="boolean" category="DynamusicB2B" 
+              column-name="gift_crt_auth" expert="true" display-name="myGiftCertificateAuthorized">
+              <attribute name="propertySortPriority" value="-25"/>
+        </property>
+        <property name="myStoreCreditAuthorized" data-type="boolean" category="DynamusicB2B" 
+              column-name="store_crdt_auth" expert="true"  display-name="myStoreCreditAuthorized">
+              <attribute name="propertySortPriority" value="-20"/>
+        </property>
+    </table>
+
+    <table name="dynamusic_prefgenres" type="multi"
+           id-column-name="id">
+        <property name="prefGenres"                           
+           category="dynamusic" data-type="set"
+              component-data-type="string"
+              column-name="genre"/>
+    </table>
+
+    <table name="dynamusic_viewedartists" type="multi"
+           id-column-name="user_id">
+        <property name="viewedArtists"                           
+           category="dynamusic" data-type="set"
+           component-item-type="artist"
+           column-name="artist_id"
+           repository="/dynamusic/SongsRepository"/>
+    </table>
+
+    <table name="dynamusic_user_playlists" type="multi"
+           id-column-name="user_id">
+        <property name="playlists"
+           category="dynamusic" data-type="set"
+           component-item-type="playlist"
+           column-name="pl_id"/>
+    </table>
+
+    <table name="dynamusic_viewedsongs" type="multi"
+           id-column-name="user_id">
+        <property name="viewedSongs"                           
+           category="dynamusic" data-type="set"
+           component-item-type="song"
+           column-name="song_id"
+           repository="/dynamusic/SongsRepository"/>
+    </table>
+
+    <!-- this table sets up the properties necessary for the 
+         Dev 2 Chapter 7 exercise -->
+    <table name="dynamusic_newsongs_playlist" type="auxiliary"
+         id-column-name="user_id">
+    	<property name="newSongsPlaylist" item-type="playlist"
+              column-name="newsongs_playlist" category="dynamusic"
+              cascade="insert,delete,update" />
+    	<property name="newSongsAutoUpdate" data-type="boolean"
+              column-name="newsongs_auto_update" category="dynamusic" 
+              default="false" />
+    </table>
+    
+    <!-- add read-only transient properties which use the custom FindAge
+         class to calculate the user's age based on her birthday.  
+         (Dev2, chapter 2) -->
+         
+    <property name="ageInYears" property-type="dynamusic.FindAge" data-type="int" default="0" 
+    	queryable="false" category="dynamusic">
+    	<attribute name="ageFormat" value="years"/>
+    </property>
+    
+    <property name="ageInDays" property-type="dynamusic.FindAge" data-type="int" default="0" 
+    	queryable="false" category="dynamusic">
+    	<attribute name="ageFormat" value="days"/>
+    </property>
+
+ </item-descriptor>
+
+  <item-descriptor name="organization">
+    <table name="dynamusic_org_info" type="auxiliary" id-column-name="org_id">
+      
+      <property name="myCompanyLogo" item-type="media" category="DynamusicB2B" 
+           column-name="logo" expert="true" queryable="false" repository="/atg/commerce/catalog/ProductCatalog" display-name="myCompanyLogo">
+           <attribute name="propertySortPriority" value="21"/>
+      </property>
+
+      <property name="myInvoiceRequestAuthorized" data-type="boolean" category="DynamusicB2B" 
+           column-name="invoice_auth" display-name="myInvoiceRequestAuthorized" expert="true">
+          <attribute name="propertySortPriority" value="-70"/>
+      </property>
+      <property name="myCreditCardAuthorized" data-type="boolean" category="DynamusicB2B" 
+           column-name="cc_auth" display-name="myCreditCardAuthorized" expert="true">
+           <attribute name="propertySortPriority" value="-50"/>
+      </property>
+      <property name="myStoreCreditAuthorized" data-type="boolean" category="DynamusicB2B" 
+           column-name="store_crdt_auth" display-name="myStoreCreditAuthorized" expert="true"> 
+           <attribute name="propertySortPriority" value="-30"/>
+      </property>
+      <property name="myGiftCertificateAuthorized" data-type="boolean" category="DynamusicB2B" 
+           column-name="gift_crt_auth" display-name="myGiftCertificateAuthorized" expert="true">
+           <attribute name="propertySortPriority" value="-10"/>
+      </property>
+
+    </table>
+
+    <!-- Derived properties -->
+
+    <property category="DynamusicB2B" name="invoiceRequestAuthorized" data-type="boolean"
+             display-name="invoiceRequestAuthorized">
+      <derivation override-property="myInvoiceRequestAuthorized">
+        <expression>parentOrganization.invoiceRequestAuthorized</expression>
+      </derivation>
+      <attribute name="propertySortPriority" value="-80"/>
+    </property>
+
+    <property category="DynamusicB2B" name="creditCardAuthorized"  data-type="boolean" 
+            display-name="creditCardAuthorized">
+      <derivation override-property="myCreditCardAuthorized">
+        <expression>parentOrganization.creditCardAuthorized</expression>
+      </derivation>
+      <attribute name="propertySortPriority" value="-60"/>
+    </property>
+
+    <property category="DynamusicB2B" name="storeCreditAuthorized"  data-type="boolean"
+            display-name="storeCreditAuthorized">
+      <derivation override-property="myStoreCreditAuthorized">
+        <expression>parentOrganization.storeCreditAuthorized</expression>
+      </derivation>
+      <attribute name="propertySortPriority" value="-40"/>
+    </property>
+
+    <property category="DynamusicB2B" name="giftCertificateAuthorized"  data-type="boolean" 
+            display-name="giftCertificateAuthorized">
+      <derivation override-property="myGiftCertificateAuthorized">
+        <expression>parentOrganization.giftCertificateAuthorized</expression>
+      </derivation>
+      <attribute name="propertySortPriority" value="-20"/>
+    </property>
+
+    <property category="DynamusicB2B" name="companyLogo" item-type="media"   queryable="false" repository="/atg/commerce/catalog/ProductCatalog" display-name="companyLogo">
+      <derivation override-property="myCompanyLogo">
+        <expression>parentOrganization.companyLogo</expression>
+      </derivation>
+      <attribute name="propertySortPriority" value="21"/>
+    </property>
+  </item-descriptor>
+
+  <item-descriptor name="credit-card" display-name="itemDescriptorCreditCard">
+    <table name="dynamusic_credit_card" type="auxiliary" id-column-name="id">
+      <property name="cardHolderFirstName" data-type="string" column-name="cc_first_name" category-resource="Name" display-name="cardHolderFirstName">
+        <attribute name="propertySortPriority" value="10"/>
+      </property>        
+      <property name="cardHolderMiddleName" data-type="string" column-name="cc_middle_name" category-resource="Name" display-name="cardHolderMiddleName">
+        <attribute name="propertySortPriority" value="20"/>
+      </property>        
+      <property name="cardHolderLastName" data-type="string" column-name="cc_last_name" category-resource="Name" display-name="cardHolderLastName">
+        <attribute name="propertySortPriority" value="30"/>
+      </property>   
+    </table> 
+  </item-descriptor>
+
+</gsa-template>

@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+<dynamo-message-system>
+
+   <patchbay>
+     
+      <message-sink>
+         <nucleus-name>
+            /atg/scenario/ScenarioManager
+         </nucleus-name>
+         <input-port>
+            <port-name>
+               GlobalEvents
+            </port-name>
+            <input-destination>
+                <destination-name>
+                   patchbay:/sqldms/DSSQueue/NewSongMessageDestination
+                </destination-name>
+                <destination-type>
+                   Queue
+                </destination-type>
+            </input-destination>
+         </input-port>
+      </message-sink>
+      
+   </patchbay>
+   
+</dynamo-message-system>

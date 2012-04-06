@@ -1,0 +1,23 @@
+<%@ taglib uri="/dspTaglib" prefix="dsp" %>
+<dsp:page>
+
+<dsp:importbean bean="/atg/dynamo/droplet/ForEach"/>
+<dsp:importbean bean="/atg/dynamo/droplet/Switch"/>         
+
+    <dsp:droplet name="ForEach">
+      <dsp:param name="array" param="paymentGroups"/>
+         <dsp:oparam name="output">
+           <dsp:droplet name="Switch">
+            <dsp:param name="value" param="key"/>
+		<dsp:getvalueof id="keyname" idtype="String" param="key">
+                   <dsp:oparam name="<%=payMethod%>">
+                      <dsp:option selected="<%=true%>" value="<%=keyname%>"/><dsp:valueof param="key"/>
+                   </dsp:oparam>
+                   <dsp:oparam name="default">
+                      <dsp:option selected="<%=false%>" value="<%=keyname%>"/><dsp:valueof param="key"/>
+                   </dsp:oparam>
+			</dsp:getvalueof>
+          </dsp:droplet>
+        </dsp:oparam>
+    </dsp:droplet>
+</dsp:page>

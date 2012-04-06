@@ -1,0 +1,48 @@
+<gsa-template xml-combine="append">
+
+  <item-descriptor name="product">
+
+    <table name="dcs_product" type="primary" id-column-name="product_id">
+      <property name="type" xml-combine="append">
+        <attribute name="useCodeForValue" value="false"/>
+        <option value="product" code="0"/>
+        <option value="album" code="1"/>
+      </property>
+    </table>
+
+    <table name="dynamusic_product" type="auxiliary" id-column-name="product_id">
+      <property name="available" data-type="boolean" column-name="available" display-name="Available" category="Dynamusic" />
+      <property name="downloadable" data-type="boolean" column-name="downloadable" display-name="Downloadable" category="Dynamusic" />
+    </table>
+
+  </item-descriptor>
+
+  <item-descriptor name="album" super-type="product" sub-type-value="album" item-cache-size="1000" query-cache-size="1000" id-space-name="product" display-name="Album">	
+    <table name="dynamusic_album_product" type="auxiliary" id-column-name="product_id">
+      <property name="albumTitle" data-type="string" column-name="album_title" display-name="Album Title" category="Dynamusic" />
+      <property name="albumLength" data-type="string" column-name="album_length" display-name="Album Length" category="Dynamusic" />
+      <property name="artist" column-name="artist" display-name="Artist" category="Dynamusic" 
+                item-type="artist" repository="/dynamusic/SongsRepository"/>
+      <property name="releaseDate" data-type="timestamp" column-name="release_date" display-name="Release Date" category="Dynamusic" />  
+      <property name="genre" data-type="enumerated" column-name="genre" 
+              display-name="Genre" category="Dynamusic">
+        <attribute name="useCodeForValue" value="false"/>
+             <option value="jazz"/> 
+             <option value="country"/> 
+             <option value="pop"/> 
+             <option value="blues"/> 
+             <option value="classical"/> 
+             <option value="folk"/> 
+      </property>
+     </table>
+     <table name="dynamusic_album_songs" type="multi"
+         id-column-name="album_id">
+    	<property name="songList" data-type="set"
+              component-item-type="song" repository="/dynamusic/SongsRepository"
+              column-name="song_list" category="Dynamusic" display-name="Songs"
+              cascade="delete"/>
+     </table>
+
+  </item-descriptor>
+  
+</gsa-template>

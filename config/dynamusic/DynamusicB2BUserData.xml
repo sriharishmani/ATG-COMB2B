@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template SYSTEM "dynamosystemresource:/atg/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+<import-items>
+
+
+<!-- 7 items of type playlist -->
+
+<add-item item-descriptor="playlist" id="1100003">
+</add-item>
+
+<add-item item-descriptor="playlist" id="1800003">
+</add-item>
+
+<add-item item-descriptor="playlist" id="1800005">
+</add-item>
+
+<add-item item-descriptor="playlist" id="1800008">
+</add-item>
+
+<add-item item-descriptor="playlist" id="200003">
+</add-item>
+
+<add-item item-descriptor="playlist" id="2400005">
+</add-item>
+
+<add-item item-descriptor="playlist" id="400003">
+</add-item>
+
+<!-- 7 items of type gift-list -->
+
+<add-item item-descriptor="gift-list" repository="/atg/commerce/gifts/Giftlists" id="gl110003">
+  <set-property name="creationDate"><![CDATA[2/9/2006 10:42:51]]></set-property>
+</add-item>
+
+<add-item item-descriptor="gift-list" repository="/atg/commerce/gifts/Giftlists" id="gl180003">
+  <set-property name="creationDate"><![CDATA[3/30/2006 15:39:35]]></set-property>
+</add-item>
+
+<add-item item-descriptor="gift-list" repository="/atg/commerce/gifts/Giftlists" id="gl180005">
+  <set-property name="creationDate"><![CDATA[3/30/2006 15:41:10]]></set-property>
+</add-item>
+
+<add-item item-descriptor="gift-list" repository="/atg/commerce/gifts/Giftlists" id="gl180008">
+  <set-property name="creationDate"><![CDATA[3/30/2006 15:42:04]]></set-property>
+</add-item>
+
+<add-item item-descriptor="gift-list" repository="/atg/commerce/gifts/Giftlists" id="gl20003">
+  <set-property name="creationDate"><![CDATA[1/19/2006 10:05:50]]></set-property>
+</add-item>
+
+<add-item item-descriptor="gift-list" repository="/atg/commerce/gifts/Giftlists" id="gl240005">
+  <set-property name="creationDate"><![CDATA[4/4/2006 11:26:07]]></set-property>
+</add-item>
+
+<add-item item-descriptor="gift-list" repository="/atg/commerce/gifts/Giftlists" id="gl40003">
+  <set-property name="creationDate"><![CDATA[1/19/2006 11:52:47]]></set-property>
+</add-item>
+
+<!-- 10 items of type contactInfo -->
+
+<add-item item-descriptor="contactInfo" id="120002">
+  <set-property name="phoneNumber"><![CDATA[314-832-8765]]></set-property>
+  <set-property name="firstName"><![CDATA[Mary]]></set-property>
+  <set-property name="faxNumber"><![CDATA[314-832-8766]]></set-property>
+  <set-property name="city"><![CDATA[St. Louis]]></set-property>
+  <set-property name="jobTitle"><![CDATA[Music Manager]]></set-property>
+  <set-property name="postalCode"><![CDATA[63130]]></set-property>
+  <set-property name="country"><![CDATA[USA]]></set-property>
+  <set-property name="county"><![CDATA[St. Louis]]></set-property>
+  <set-property name="state"><![CDATA[MO]]></set-property>
+  <set-property name="address1"><![CDATA[123 Main St.]]></set-property>
+  <set-property name="companyName"><![CDATA[Internet Music Corp.]]></set-property>
+  <set-property name="lastName"><![CDATA[Jones]]></set-property>
+</add-item>
+
+<add-item item-descriptor="contactInfo" id="140002">
+  <set-property name="phoneNumber"><![CDATA[281-976-2002]]></set-property>
+  <set-property name="faxNumber"><![CDATA[281-976-2010]]></set-property>
+  <set-property name="city"><![CDATA[Katy]]></set-property>
+  <set-property name="postalCode"><![CDATA[77449]]></set-property>
+  <set-property name="country"><![CDATA[USA]]></set-property>
+  <set-property name="county"><![CDATA[Harris]]></set-property>
+  <set-property name="state"><![CDATA[TX]]></set-property>
+  <set-property name="address1"><![CDATA[11322 Carvel Ln]]></set-property>
+  <set-property name="companyName"><![CDATA[O&A Music West]]></set-property>
+</add-item>
+
+<add-item item-descriptor="contactInfo" id="210002">
+  <set-property name="phoneNumber"><![CDATA[954-232-1000]]></set-property>
+  <set-property name="faxNumber"><![CDATA[954-232-1001]]></set-property>
+  <set-property name="city"><![CDATA[Fort Lauderdale]]></set-property>
+  <set-property name="postalCode"><![CDATA[33301]]></set-property>
+  <set-property name="country"><![CDATA[USA]]></set-property>
+  <set-property name="county"><![CDATA[Broward]]></set-property>
+  <set-property name="state"><![CDATA[FL]]></set-property>
+  <set-property name="address1"><![CDATA[5434 Washington Ave.]]></set-property>
+  <set-property name="companyName"><![CDATA[O&A Music]]></set-property>
+</add-item>
+
+<add-item item-descriptor="contactInfo" id="280002">
+  <set-property name="phoneNumber"><![CDATA[314-876-6541]]></set-property>
+  <set-property name="faxNumber"><![CDATA[314-876-6542]]></set-property>
+  <set-property name="city"><![CDATA[St. Louis]]></set-property>
+  <set-property name="postalCode"><![CDATA[63130]]></set-property>
+  <set-property name="country"><![CDATA[USA]]></set-property>
+  <set-property name="county"><![CDATA[St. Louis]]></set-property>
+  <set-property name="state"><![CDATA[MO]]></set-property>
+  <set-property name="address1"><![CDATA[125 Main St.]]></set-property>
+  <set-property name="companyName"><![CDATA[MusicOne]]></set-property>
+</add-item>
+
+<add-item item-descriptor="contactInfo" id="280004">
+</add-item>
+
+<add-item item-descriptor="contactInfo" id="280006">
+</add-item>
+
+<add-item item-descriptor="contactInfo" id="280009">
+</add-item>
+
+<add-item item-descriptor="contactInfo" id="340004">
+  <set-property name="state"><![CDATA[MA]]></set-property>
+</add-item>
+
+<add-item item-descriptor="contactInfo" id="360008">
+  <set-property name="city"><![CDATA[Somerville]]></set-property>
+  <set-property name="postalCode"><![CDATA[02141]]></set-property>
+  <set-property name="country"><![CDATA[USA]]></set-property>
+  <set-property name="county"><![CDATA[Middlesex]]></set-property>
+  <set-property name="state"><![CDATA[MA]]></set-property>
+  <set-property name="address1"><![CDATA[834 Lindell Blvd.]]></set-property>
+  <set-property name="companyName"><![CDATA[Internet Music Corp. East]]></set-property>
+</add-item>
+
+<add-item item-descriptor="contactInfo" id="410003">
+  <set-property name="phoneNumber"><![CDATA[314-876-0987]]></set-property>
+  <set-property name="firstName"><![CDATA[Tom]]></set-property>
+  <set-property name="city"><![CDATA[St. Charles]]></set-property>
+  <set-property name="postalCode"><![CDATA[63145]]></set-property>
+  <set-property name="country"><![CDATA[USA]]></set-property>
+  <set-property name="state"><![CDATA[MO]]></set-property>
+  <set-property name="address1"><![CDATA[986 Westward Way]]></set-property>
+  <set-property name="lastName"><![CDATA[St. Clair]]></set-property>
+</add-item>
+
+<!-- 7 items of type user -->
+
+<add-item item-descriptor="user" id="120002">
+  <set-property name="lastActivity"><![CDATA[4/15/2006 21:23:54]]></set-property>
+  <!-- derived   <set-property name="defaultShippingAddress"><![CDATA[120002]]></set-property>  -->
+  <set-property name="login"><![CDATA[mary]]></set-property>
+  <set-property name="ancestors"><![CDATA[100005,root]]></set-property>
+  <set-property name="lastPasswordUpdate"><![CDATA[1/19/2006 10:05:50]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[true]]></set-property>  -->
+  <set-property name="businessAddress"><![CDATA[120002]]></set-property>
+  <!-- derived   <set-property name="defaultBillingAddress"><![CDATA[120002]]></set-property>  -->
+  <set-property name="parentOrganization"><![CDATA[100005]]></set-property>
+  <!-- derived   <set-property name="catalog"><![CDATA[catalog50012]]></set-property>  -->
+  <set-property name="firstName"><![CDATA[Mary]]></set-property>
+  <set-property name="myDefaultBillingAddress"><![CDATA[120002]]></set-property>
+  <set-property name="password"><![CDATA[b8e7be5dfa2ce0714d21dcfc7d72382c]]></set-property>
+  <!-- derived   <set-property name="shippingAddrs"><![CDATA[Internet Music Store East=360008,Internet Music Store West=120002]]></set-property>  -->
+  <set-property name="homeAddress"><![CDATA[120002]]></set-property>
+  <set-property name="myApprovalRequired"><![CDATA[false]]></set-property>
+  <set-property name="lastName"><![CDATA[Jones]]></set-property>
+  <set-property name="wishlist"><![CDATA[gl20003]]></set-property>
+  <!-- derived   <set-property name="approvalRequired"><![CDATA[false]]></set-property>  -->
+  <set-property name="myCatalog"><![CDATA[catalog50012]]></set-property>
+  <set-property name="newSongsPlaylist"><![CDATA[200003]]></set-property>
+  <set-property name="myDefaultShippingAddress"><![CDATA[120002]]></set-property>
+  <set-property name="myShippingAddrs"><![CDATA[Internet Music Store East=360008,Internet Music Store West=120002]]></set-property>
+  <!-- derived   <set-property name="priceList"><![CDATA[plist270005]]></set-property>  -->
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[true]]></set-property>  -->
+</add-item>
+
+<add-item item-descriptor="user" id="140002">
+  <set-property name="lastActivity"><![CDATA[4/7/2006 21:48:03]]></set-property>
+  <set-property name="login"><![CDATA[jack]]></set-property>
+  <set-property name="ancestors"><![CDATA[100005,root]]></set-property>
+  <set-property name="lastPasswordUpdate"><![CDATA[1/19/2006 11:52:47]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[true]]></set-property>  -->
+  <set-property name="parentOrganization"><![CDATA[100005]]></set-property>
+  <!-- derived   <set-property name="catalog"><![CDATA[catalog50012]]></set-property>  -->
+  <set-property name="firstName"><![CDATA[Jack]]></set-property>
+  <set-property name="password"><![CDATA[4ff9fc6e4e5d5f590c4f2134a8cc96d1]]></set-property>
+  <set-property name="homeAddress"><![CDATA[140002]]></set-property>
+  <set-property name="lastName"><![CDATA[Smith]]></set-property>
+  <set-property name="wishlist"><![CDATA[gl40003]]></set-property>
+  <!-- derived   <set-property name="approvalRequired"><![CDATA[true]]></set-property>  -->
+  <set-property name="myCatalog"><![CDATA[catalog50012]]></set-property>
+  <set-property name="newSongsPlaylist"><![CDATA[400003]]></set-property>
+  <!-- derived   <set-property name="priceList"><![CDATA[plist270005]]></set-property>  -->
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[true]]></set-property>  -->
+</add-item>
+
+<add-item item-descriptor="user" id="210002">
+  <set-property name="lastActivity"><![CDATA[4/7/2006 21:47:35]]></set-property>
+  <!-- derived   <set-property name="defaultShippingAddress"><![CDATA[210002]]></set-property>  -->
+  <set-property name="login"><![CDATA[anna]]></set-property>
+  <!-- derived   <set-property name="billingAddrs"><![CDATA[O&A West=140002,O&A Main=210002]]></set-property>  -->
+  <set-property name="lastPasswordUpdate"><![CDATA[2/9/2006 10:42:51]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[true]]></set-property>  -->
+  <!-- derived   <set-property name="defaultBillingAddress"><![CDATA[210002]]></set-property>  -->
+  <!-- derived   <set-property name="approvers"><![CDATA[210002]]></set-property>  -->
+  <set-property name="parentOrganization"><![CDATA[200004]]></set-property>
+  <!-- derived   <set-property name="catalog"><![CDATA[catalog120006]]></set-property>  -->
+  <set-property name="firstName"><![CDATA[Anna]]></set-property>
+  <set-property name="password"><![CDATA[a70f9e38ff015afaa9ab0aacabee2e13]]></set-property>
+  <!-- derived   <set-property name="shippingAddrs"><![CDATA[O&A West=140002,O&A Main=210002]]></set-property>  -->
+  <set-property name="homeAddress"><![CDATA[210002]]></set-property>
+  <set-property name="myApprovalRequired"><![CDATA[false]]></set-property>
+  <set-property name="lastName"><![CDATA[Ryan]]></set-property>
+  <set-property name="wishlist"><![CDATA[gl110003]]></set-property>
+  <!-- derived   <set-property name="approvalRequired"><![CDATA[false]]></set-property>  -->
+  <set-property name="newSongsPlaylist"><![CDATA[1100003]]></set-property>
+  <!-- derived   <set-property name="priceList"><![CDATA[plist270007]]></set-property>  -->
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[false]]></set-property>  -->
+</add-item>
+
+<add-item item-descriptor="user" id="280002">
+  <set-property name="lastActivity"><![CDATA[4/16/2006 16:19:52]]></set-property>
+  <!-- derived   <set-property name="defaultShippingAddress"><![CDATA[210002]]></set-property>  -->
+  <set-property name="login"><![CDATA[oliver]]></set-property>
+  <!-- derived   <set-property name="billingAddrs"><![CDATA[O&A West=140002,O&A Main=210002]]></set-property>  -->
+  <set-property name="lastPasswordUpdate"><![CDATA[3/30/2006 15:39:35]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[true]]></set-property>  -->
+  <!-- derived   <set-property name="defaultBillingAddress"><![CDATA[210002]]></set-property>  -->
+  <!-- derived   <set-property name="approvers"><![CDATA[210002]]></set-property>  -->
+  <set-property name="parentOrganization"><![CDATA[200004]]></set-property>
+  <!-- derived   <set-property name="catalog"><![CDATA[catalog120006]]></set-property>  -->
+  <set-property name="firstName"><![CDATA[Oliver]]></set-property>
+  <set-property name="password"><![CDATA[acae273a5a5c88b46b36d65a25f5f435]]></set-property>
+  <!-- derived   <set-property name="shippingAddrs"><![CDATA[O&A West=140002,O&A Main=210002]]></set-property>  -->
+  <set-property name="homeAddress"><![CDATA[280004]]></set-property>
+  <set-property name="lastName"><![CDATA[Birdsall]]></set-property>
+  <set-property name="wishlist"><![CDATA[gl180003]]></set-property>
+  <!-- derived   <set-property name="approvalRequired"><![CDATA[true]]></set-property>  -->
+  <set-property name="newSongsPlaylist"><![CDATA[1800003]]></set-property>
+  <!-- derived   <set-property name="priceList"><![CDATA[plist270007]]></set-property>  -->
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[false]]></set-property>  -->
+</add-item>
+
+<add-item item-descriptor="user" id="280004">
+  <set-property name="lastActivity"><![CDATA[4/14/2006 12:16:03]]></set-property>
+  <!-- derived   <set-property name="defaultShippingAddress"><![CDATA[280002]]></set-property>  -->
+  <set-property name="login"><![CDATA[john]]></set-property>
+  <set-property name="ancestors"><![CDATA[300002,root]]></set-property>
+  <!-- derived   <set-property name="billingAddrs"><![CDATA[MusicOne Home Office=120002,MusicOne Accounting Office=280002]]></set-property>  -->
+  <set-property name="lastPasswordUpdate"><![CDATA[3/30/2006 15:41:10]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[false]]></set-property>  -->
+  <!-- derived   <set-property name="defaultBillingAddress"><![CDATA[120002]]></set-property>  -->
+  <!-- derived   <set-property name="approvers"><![CDATA[280007]]></set-property>  -->
+  <set-property name="parentOrganization"><![CDATA[300002]]></set-property>
+  <set-property name="firstName"><![CDATA[John]]></set-property>
+  <!-- derived   <set-property name="defaultPaymentType"><![CDATA[usercc10002]]></set-property>  -->
+  <set-property name="password"><![CDATA[527bd5b5d689e2c32ae974c6229ff785]]></set-property>
+  <!-- derived   <set-property name="shippingAddrs"><![CDATA[MusicOne Satellite Office=280002,MusicOne Main Office=120002]]></set-property>  -->
+  <set-property name="homeAddress"><![CDATA[280006]]></set-property>
+  <!-- derived   <set-property name="paymentTypes"><![CDATA[John Marshall=usercc10004,Susan Hart=usercc10002]]></set-property>  -->
+  <set-property name="lastName"><![CDATA[Marshall]]></set-property>
+  <set-property name="wishlist"><![CDATA[gl180005]]></set-property>
+  <!-- derived   <set-property name="approvalRequired"><![CDATA[true]]></set-property>  -->
+  <set-property name="newSongsPlaylist"><![CDATA[1800005]]></set-property>
+  <!-- derived   <set-property name="priceList"><![CDATA[plist270009]]></set-property>  -->
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[true]]></set-property>  -->
+</add-item>
+
+<add-item item-descriptor="user" id="280007">
+  <set-property name="lastActivity"><![CDATA[4/15/2006 21:28:02]]></set-property>
+  <!-- derived   <set-property name="defaultShippingAddress"><![CDATA[280002]]></set-property>  -->
+  <set-property name="login"><![CDATA[susan]]></set-property>
+  <set-property name="ancestors"><![CDATA[300002,root]]></set-property>
+  <!-- derived   <set-property name="billingAddrs"><![CDATA[MusicOne Home Office=120002,MusicOne Accounting Office=280002]]></set-property>  -->
+  <set-property name="lastPasswordUpdate"><![CDATA[3/30/2006 15:42:04]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[false]]></set-property>  -->
+  <!-- derived   <set-property name="defaultBillingAddress"><![CDATA[120002]]></set-property>  -->
+  <!-- derived   <set-property name="approvers"><![CDATA[280007]]></set-property>  -->
+  <set-property name="parentOrganization"><![CDATA[300002]]></set-property>
+  <set-property name="firstName"><![CDATA[Susan]]></set-property>
+  <!-- derived   <set-property name="defaultPaymentType"><![CDATA[usercc10002]]></set-property>  -->
+  <set-property name="password"><![CDATA[ac575e3eecf0fa410518c2d3a2e7209f]]></set-property>
+  <!-- derived   <set-property name="shippingAddrs"><![CDATA[MusicOne Satellite Office=280002,MusicOne Main Office=120002]]></set-property>  -->
+  <set-property name="homeAddress"><![CDATA[280009]]></set-property>
+  <!-- derived   <set-property name="paymentTypes"><![CDATA[John Marshall=usercc10004,Susan Hart=usercc10002]]></set-property>  -->
+  <set-property name="lastName"><![CDATA[Hart]]></set-property>
+  <set-property name="wishlist"><![CDATA[gl180008]]></set-property>
+  <!-- derived   <set-property name="approvalRequired"><![CDATA[true]]></set-property>  -->
+  <set-property name="newSongsPlaylist"><![CDATA[1800008]]></set-property>
+  <!-- derived   <set-property name="priceList"><![CDATA[plist270009]]></set-property>  -->
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[true]]></set-property>  -->
+</add-item>
+
+<add-item item-descriptor="user" id="340004">
+  <set-property name="lastActivity"><![CDATA[4/15/2006 21:34:45]]></set-property>
+  <!-- derived   <set-property name="defaultShippingAddress"><![CDATA[410003]]></set-property>  -->
+  <set-property name="login"><![CDATA[tom]]></set-property>
+  <set-property name="ancestors"><![CDATA[100003,root]]></set-property>
+  <set-property name="lastPasswordUpdate"><![CDATA[4/4/2006 11:26:07]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[false]]></set-property>  -->
+  <set-property name="shareProfile"><![CDATA[false]]></set-property>
+  <set-property name="parentOrganization"><![CDATA[100003]]></set-property>
+  <!-- derived   <set-property name="catalog"><![CDATA[catalog50005]]></set-property>  -->
+  <set-property name="firstName"><![CDATA[Tom]]></set-property>
+  <set-property name="password"><![CDATA[34b7da764b21d298ef307d04d8152dc5]]></set-property>
+  <set-property name="registrationDate"><![CDATA[4/4/2006 11:26:07]]></set-property>
+  <set-property name="homeAddress"><![CDATA[340004]]></set-property>
+  <set-property name="prefGenres"><![CDATA[classical]]></set-property>
+  <set-property name="lastName"><![CDATA[St. Clair]]></set-property>
+  <set-property name="wishlist"><![CDATA[gl240005]]></set-property>
+  <!-- derived   <set-property name="approvalRequired"><![CDATA[false]]></set-property>  -->
+  <set-property name="myCatalog"><![CDATA[catalog50005]]></set-property>
+  <set-property name="newSongsPlaylist"><![CDATA[2400005]]></set-property>
+  <set-property name="myDefaultShippingAddress"><![CDATA[410003]]></set-property>
+  <!-- derived   <set-property name="priceList"><![CDATA[plist270003]]></set-property>  -->
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[true]]></set-property>  -->
+</add-item>
+
+<!-- 5 items of type organization -->
+
+<add-item item-descriptor="organization" id="100003">
+  <set-property name="myInvoiceRequestAuthorized"><![CDATA[false]]></set-property>
+  <set-property name="type"><![CDATA[none]]></set-property>
+  <set-property name="parentOrganization"><![CDATA[root]]></set-property>
+  <set-property name="myCreditCardAuthorized"><![CDATA[true]]></set-property>
+  <set-property name="name"><![CDATA[Dynamusic User]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[false]]></set-property>  -->
+  <set-property name="myApprovalRequired"><![CDATA[false]]></set-property>
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[true]]></set-property>  -->
+  <set-property name="members"><![CDATA[340004]]></set-property>
+  <!-- derived   <set-property name="approvalRequired"><![CDATA[false]]></set-property>  -->
+  <set-property name="ancestorOrganizations"><![CDATA[root]]></set-property>
+</add-item>
+
+<add-item item-descriptor="organization" id="100005">
+  <set-property name="myInvoiceRequestAuthorized"><![CDATA[true]]></set-property>
+  <set-property name="parentOrganization"><![CDATA[root]]></set-property>
+  <set-property name="myCreditCardAuthorized"><![CDATA[true]]></set-property>
+  <set-property name="name"><![CDATA[Dynamusic Wholesale]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[true]]></set-property>  -->
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[true]]></set-property>  -->
+  <set-property name="members"><![CDATA[120002,140002]]></set-property>
+  <set-property name="ancestorOrganizations"><![CDATA[root]]></set-property>
+</add-item>
+
+<add-item item-descriptor="organization" id="200004">
+  <!-- derived   <set-property name="shippingAddrs"><![CDATA[O&A West=140002,O&A Main=210002]]></set-property>  -->
+  <set-property name="myInvoiceRequestAuthorized"><![CDATA[true]]></set-property>
+  <set-property name="myApprovers"><![CDATA[210002]]></set-property>
+  <set-property name="parentOrganization"><![CDATA[root]]></set-property>
+  <!-- derived   <set-property name="defaultBillingAddress"><![CDATA[210002]]></set-property>  -->
+  <set-property name="myDefaultShippingAddress"><![CDATA[210002]]></set-property>
+  <!-- derived   <set-property name="defaultShippingAddress"><![CDATA[210002]]></set-property>  -->
+  <set-property name="myCreditCardAuthorized"><![CDATA[false]]></set-property>
+  <set-property name="name"><![CDATA[O&A Music]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[true]]></set-property>  -->
+  <set-property name="myShippingAddrs"><![CDATA[O&A West=140002,O&A Main=210002]]></set-property>
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[false]]></set-property>  -->
+  <set-property name="members"><![CDATA[210002,280002]]></set-property>
+  <!-- derived   <set-property name="customerType"><![CDATA[Standard]]></set-property>  -->
+  <set-property name="myDefaultBillingAddress"><![CDATA[210002]]></set-property>
+  <set-property name="myCustomerType"><![CDATA[Standard]]></set-property>
+  <set-property name="ancestorOrganizations"><![CDATA[root]]></set-property>
+  <!-- derived   <set-property name="billingAddrs"><![CDATA[O&A West=140002,O&A Main=210002]]></set-property>  -->
+  <set-property name="myBillingAddrs"><![CDATA[O&A West=140002,O&A Main=210002]]></set-property>
+  <!-- derived   <set-property name="approvers"><![CDATA[210002]]></set-property>  -->
+</add-item>
+
+<add-item item-descriptor="organization" id="300002">
+  <!-- derived   <set-property name="shippingAddrs"><![CDATA[MusicOne Satellite Office=280002,MusicOne Main Office=120002]]></set-property>  -->
+  <set-property name="myInvoiceRequestAuthorized"><![CDATA[false]]></set-property>
+  <set-property name="myApprovers"><![CDATA[280007]]></set-property>
+  <!-- derived   <set-property name="paymentTypes"><![CDATA[John Marshall=usercc10004,Susan Hart=usercc10002]]></set-property>  -->
+  <set-property name="myPaymentTypes"><![CDATA[John Marshall=usercc10004,Susan Hart=usercc10002]]></set-property>
+  <!-- derived   <set-property name="defaultPaymentType"><![CDATA[usercc10002]]></set-property>  -->
+  <set-property name="parentOrganization"><![CDATA[root]]></set-property>
+  <set-property name="myDefaultPaymentType"><![CDATA[usercc10002]]></set-property>
+  <!-- derived   <set-property name="defaultBillingAddress"><![CDATA[120002]]></set-property>  -->
+  <set-property name="myDefaultShippingAddress"><![CDATA[280002]]></set-property>
+  <!-- derived   <set-property name="defaultShippingAddress"><![CDATA[280002]]></set-property>  -->
+  <set-property name="myCreditCardAuthorized"><![CDATA[true]]></set-property>
+  <set-property name="name"><![CDATA[MusicOne]]></set-property>
+  <!-- derived   <set-property name="invoiceRequestAuthorized"><![CDATA[false]]></set-property>  -->
+  <set-property name="myShippingAddrs"><![CDATA[MusicOne Satellite Office=280002,MusicOne Main Office=120002]]></set-property>
+  <!-- derived   <set-property name="creditCardAuthorized"><![CDATA[true]]></set-property>  -->
+  <set-property name="members"><![CDATA[280007,280004]]></set-property>
+  <set-property name="myDefaultBillingAddress"><![CDATA[120002]]></set-property>
+  <set-property name="ancestorOrganizations"><![CDATA[root]]></set-property>
+  <!-- derived   <set-property name="billingAddrs"><![CDATA[MusicOne Home Office=120002,MusicOne Accounting Office=280002]]></set-property>  -->
+  <set-property name="myBillingAddrs"><![CDATA[MusicOne Home Office=120002,MusicOne Accounting Office=280002]]></set-property>
+  <!-- derived   <set-property name="approvers"><![CDATA[280007]]></set-property>  -->
+</add-item>
+
+<add-item item-descriptor="organization" id="root">
+  <set-property name="childOrganizations"><![CDATA[200004,100003,100005,300002]]></set-property>
+  <set-property name="description"><![CDATA[organization : root]]></set-property>
+  <set-property name="name"><![CDATA[root]]></set-property>
+</add-item>
+
+<!-- 2 items of type credit-card -->
+
+<add-item item-descriptor="credit-card" id="usercc10002">
+  <set-property name="cardHolderFirstName"><![CDATA[Susan]]></set-property>
+  <set-property name="expirationMonth"><![CDATA[03]]></set-property>
+  <set-property name="billingAddress"><![CDATA[120002]]></set-property>
+  <set-property name="creditCardType"><![CDATA[Visa]]></set-property>
+  <set-property name="expirationDayOfMonth"><![CDATA[31]]></set-property>
+  <set-property name="expirationYear"><![CDATA[2015]]></set-property>
+  <set-property name="creditCardNumber"><![CDATA[4111111111111111]]></set-property>
+  <set-property name="cardHolderLastName"><![CDATA[Hart]]></set-property>
+</add-item>
+
+<add-item item-descriptor="credit-card" id="usercc10004">
+  <set-property name="cardHolderFirstName"><![CDATA[John]]></set-property>
+  <set-property name="expirationMonth"><![CDATA[04]]></set-property>
+  <set-property name="cardHolderMiddleName"><![CDATA[T]]></set-property>
+  <set-property name="billingAddress"><![CDATA[120002]]></set-property>
+  <set-property name="creditCardType"><![CDATA[Visa]]></set-property>
+  <set-property name="expirationDayOfMonth"><![CDATA[15]]></set-property>
+  <set-property name="expirationYear"><![CDATA[2015]]></set-property>
+  <set-property name="creditCardNumber"><![CDATA[4111111111111111]]></set-property>
+  <set-property name="cardHolderLastName"><![CDATA[Marshall]]></set-property>
+</add-item>
+
+
+</import-items>
+
+</gsa-template>
