@@ -1,6 +1,6 @@
 <%@ taglib uri="/dspTaglib" prefix="dsp"%>
 <dsp:page>
-
+    <dsp:importbean bean="/atg/commerce/catalog/CatalogNavHistory"/>
 	<!-- ATG Training -->
 	<!-- Creating Commerce Applications -->
 	<!-- storefront page to loop through rootCategories property -->
@@ -35,6 +35,16 @@
 			<dsp:droplet name="/atg/commerce/catalog/ProductLookup">
 				<dsp:param name="id" param="itemId" />
 				<dsp:oparam name="output">
+                    <dsp:droplet name="/atg/commerce/catalog/ProductBrowsed">
+                        <dsp:param name="eventobject" param="element"/>
+                    </dsp:droplet>
+                <dsp:droplet name="/atg/commerce/catalog/CatalogNavHistoryCollector">
+                    <dsp:param name="navAction" param="navAction"/>
+                    <dsp:param name="navCount" param="navCount"/>
+                    <dsp:param name="item" param="element"/>
+                </dsp:droplet>
+                    <dsp:include page="breadcrumbs.jsp" flush="true"/>
+                <p>
 					<h2><dsp:valueof param="element.itemDisplayName" /></h2>
 					<dsp:getvalueof id="img12" param="element.smallImage.url"
 						idtype="java.lang.String">

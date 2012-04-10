@@ -19,6 +19,24 @@
 
 <%-- Chapter 4, Exercise 2 --%>
 <%-- Insert ForEach droplet to iterate through the navHistory --%>
+<dsp:droplet name="/atg/dynamo/droplet/ForEach">
+    <dsp:param name="array" bean="/atg/commerce/catalog/CatalogNavHistory.navHistory"/>
+  <dsp:oparam name="output"> 
+      <dsp:getvalueof id="templateURL"
+                      idtype="java.lang.String"
+                      param="element.template.url">
+          <dsp:a href="<%=templateURL%>">
+              <dsp:param name="id" param="element.repositoryId"/>
+              <dsp:param name="navAction" value="pop"/>
+              <dsp:param bean="/atg/commerce/catalog/CatalogNavHistory.navCount" name="navCount"/>
+              <dsp:valueof param="element.displayName"/>
+          </dsp:a>
+                      </dsp:getvalueof> ->
+  </dsp:oparam>
+  <dsp:oparam name="empty"> 
+        No history
+  </dsp:oparam>
+</dsp:droplet>
 
 
 </font>

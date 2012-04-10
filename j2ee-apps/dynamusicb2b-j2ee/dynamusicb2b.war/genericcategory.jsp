@@ -1,6 +1,6 @@
 <%@ taglib uri="/dspTaglib" prefix="dsp"%>
-<dsp:page>
 
+<dsp:page>
 	<!-- ATG Training -->
 	<!-- Creating Commerce Applications -->
 	<!-- storefront page to loop through rootCategories property -->
@@ -31,6 +31,17 @@
 			<dsp:droplet name="/atg/commerce/catalog/CategoryLookup">
 				<dsp:param name="id" param="itemId" />
 				<dsp:oparam name="output">
+                <dsp:droplet name="/atg/commerce/catalog/CategoryBrowsed">
+                    <dsp:param name="eventobject" param="element"/>
+                </dsp:droplet>
+                
+                <dsp:droplet name="/atg/commerce/catalog/CatalogNavHistoryCollector">
+                    <dsp:param name="navAction" param="navAction"/>
+                    <dsp:param name="navCount" param="navCount"/>
+                    <dsp:param name="item" param="element"/>
+                </dsp:droplet>
+                <dsp:include page="breadcrumbs.jsp" flush="true"/>
+                <p>
 					<dsp:droplet name="/atg/dynamo/droplet/ForEach">
 						<p><dsp:param name="array" param="element.childCategories" />
 						<dsp:oparam name="output">
@@ -39,6 +50,8 @@
 								<dsp:a href="<%=templateURL%>">
 									<dsp:param name="itemId" param="element.repositoryId" />
 									<dsp:valueof param="element.displayName" />
+                                    <dsp:param name="navCount" bean="/atg/commerce/catalog/CatalogNavHistory.navCount"/>
+                                    <dsp:param name="navAction" value="push"/>
 								</dsp:a>
 							</dsp:getvalueof>
 						</dsp:oparam>
@@ -51,6 +64,8 @@
 								<dsp:a href="<%=templateURL%>">
 									<dsp:param name="itemId" param="element.repositoryId" />
 									<dsp:valueof param="element.displayName" />
+                                    <dsp:param name="navCount" bean="/atg/commerce/catalog/CatalogNavHistory.navCount"/>
+                                    <dsp:param name="navAction" value="push"/>
 								</dsp:a>
 							</dsp:getvalueof>
 						</dsp:oparam>
