@@ -37,7 +37,61 @@
 
 <%-- Chapter 6, Exercise 1, Part 3 --%>
 <%-- Insert the PriceDroplet and ComplexPriceDroplet here --%>
- 
+ 	<dsp:droplet name="PriceDroplet">
+         <dsp:param name="product" param="product"/>
+         <dsp:param name="sku" param="sku"/>
+         <dsp:oparam name="output">
+             <dsp:droplet name="Switch">
+             <dsp:param name="value" param="price.pricingScheme"/>
+                 <dsp:oparam name="bulkPrice">
+                     <p>Bulk price:
+                     <ul>
+                      <dsp:droplet name="ComplexPriceDroplet">
+                          <dsp:param name="complexPrice" param="price.complexPrice"/>
+                          <dsp:oparam name="output">
+                              <dsp:droplet name="For">
+                                  <dsp:param name="howMany" param="numLevels"/>
+                                  <dsp:oparam name="output">
+                                      <li>
+                                      <dsp:valueof param="levelMinimums[param:index]"/> -
+                                      <dsp:valueof param="levelMaximums[param:index]">or over </dsp:valueof>
+                                      <dsp:valueof converter="currency" param="prices[param:index]"/>
+                                      </li>
+                                  </dsp:oparam>
+                              </dsp:droplet>
+                          </dsp:oparam>
+                      </dsp:droplet>
+                     </ul>
+                 </dsp:oparam>
+                 <dsp:oparam name="tieredPrice">
+                     <p>Tier price:
+                     <ul>
+                     <dsp:droplet name="ComplexPriceDroplet">
+                         <dsp:param name="complexPrice" param="price.complexPrice"/>
+                         <dsp:oparam name="output">
+                             <dsp:droplet name="For">
+                                 <dsp:param name="howMany" param="numLevels"/>
+                                 <dsp:oparam name="output">
+                                     <li>
+                                         <dsp:valueof param="levelMinimums[param:index]"/> -
+                                         <dsp:valueof param="levelMaximums[param:index]">or over </dsp:valueof>
+                                         <dsp:valueof converter="currency" param="prices[param:index]"/>
+                                     </li>
+                                 </dsp:oparam>
+                             </dsp:droplet>
+                         </dsp:oparam>
+                     </dsp:droplet>
+                     </ul>
+                 </dsp:oparam>
+                 <dsp:oparam name="listPrice">
+                     <dsp:include page="discountprice.jsp" flush="true">
+                         <dsp:param name="sku" param="sku"/>
+                         <dsp:param name="product" param="product"/>
+                     </dsp:include>
+                 </dsp:oparam>
+             </dsp:droplet>
+         </dsp:oparam>
+ 	</dsp:droplet>
 
 
 
